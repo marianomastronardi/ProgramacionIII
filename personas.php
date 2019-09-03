@@ -1,9 +1,11 @@
 <?php
+include 'personasDAO.php';
 class persona 
 {
     public $nombre;
     public $dni;
-    
+    public $personaList=array();
+
     public function __construct($nombre, $dni)
     {
         $this->nombre = $nombre;
@@ -12,8 +14,31 @@ class persona
     
     public function saludar()
     {
-        echo 'Hola'.$this->nombre; //el . concatena en comilla simple
+        echo $this->nombre; //el . concatena en comilla simple
         echo "<br/>";
+        echo $this->dni; //el . concatena en comilla simple
+        echo "<br/>";
+    }
+
+    function GuardarPersona()
+    {
+        //$personaDAO = new personaDAO();
+        personaDAO::Guardar($this);
+    }
+
+    function ShowPeople()
+    {
+        personaDAO::Listar();
+    }
+
+    function EditPerson()
+    {
+        personaDAO::Modificar($this);
+    }
+
+    function Deletear()
+    {
+        personaDAO::Borrar($this->dni);
     }
 
     //new persona();

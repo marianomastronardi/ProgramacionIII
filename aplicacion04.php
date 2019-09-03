@@ -7,5 +7,4 @@ for($acum=0; $acum < $top; $cont++)
     $acum = $acum + $cont;
 }
 
-for()
 ?>

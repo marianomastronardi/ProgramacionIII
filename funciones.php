@@ -8,4 +8,8 @@ function saludar($nombre)
 //la comilla doble permite poner variable dentro 
 # la comilla simple muestra el literal de valor
 
+function guardarAlumno()
+{
+    
+}
 ?>
