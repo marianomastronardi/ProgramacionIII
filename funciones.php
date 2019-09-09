@@ -12,4 +12,14 @@ function guardarAlumno()
 {
     
 }
+
+function OpenFile()
+{
+    
+}
+
+function writeArchivo()
+{
+    
+}
 ?>

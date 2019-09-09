@@ -4,6 +4,7 @@ class persona
 {
     public $nombre;
     public $dni;
+    public $legajo;
     public $personaList=array();
 
     public function __construct($nombre, $dni)
@@ -39,6 +40,16 @@ class persona
     function Deletear()
     {
         personaDAO::Borrar($this->dni);
+    }
+
+    function CrearArchivo()
+    {
+            
+    }
+
+    function LeerArchivo()
+    {
+
     }
 
     //new persona();
